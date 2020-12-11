@@ -1,13 +1,11 @@
-#########
+
 RUNNING THE SERVER
-#########
+
 
 node index.js
 
-
-#########
 QUERIES
-#########
+
 
 # GET POST BY TOPIC
 
