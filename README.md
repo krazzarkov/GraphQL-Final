@@ -1,14 +1,15 @@
+Simple GraphQL project which replicates Reddit style posts. Created for my GraphQL class in BCIT.
+
 
 **RUNNING THE SERVER**
 
     node index.js
 
 
-
 **QUERIES**
 -
 
-*GET POST BY TOPIC*
+**GET POST BY TOPIC**
 
     query {
       getPostByTopic(topic: "School"){
@@ -67,10 +68,9 @@
 **SUBSCRIPTION**
 -
 
+Subscribe to a post when you create it (replicates reddit system where post author gets automatically subscribed to their own posts)
 
-SUBSCRIBE TO A POST WHEN YOU CREATE IT (REPLICATES REDDIT SYSTEM WHERE POST AUTHOR GETS AUTOMATICALLY SUBSCRIBED TO THEIR OWN POSTS)
-
-AFTER THE SUBSCRIPTION IS LISTENING, CREATE A NEW POST AND GO BACK TO THE SUBSCRIPTION TAB ON APOLLO CLIENT TO SEE THE RESULTS
+After the subscription is listening, create a new post and go back to the subscription tab on apollo client to see the results.
 
     subscription {
       newPost {
